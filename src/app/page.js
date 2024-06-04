@@ -1,5 +1,9 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <div className="m-0 p-0">hello</div>;
+  return (
+    <div className="max-w-[1728px] bg-orange">
+      <h1>hOME</h1>
+    </div>
+  );
 }
