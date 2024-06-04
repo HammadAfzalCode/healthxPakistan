@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: ["Poppins", "sans-serif"],
+      screens: {
+        xs: "320px",
+      },
     },
     fontSize: {
       sm: "0.8rem", // Custom small font size
@@ -23,4 +26,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
