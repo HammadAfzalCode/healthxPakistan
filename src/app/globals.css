@@ -5,8 +5,3 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 766px) {
-  html {
-    font-size: 31.25%; /* 8px */
-  }
-}

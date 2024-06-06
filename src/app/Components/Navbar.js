@@ -25,38 +25,37 @@ const Navbar = () => {
           src="/logo 2.svg"
           width={122.79}
           height={31.66}
-          className="sm:w-[8.1rem]"
+          className=" xs:hidden sm:block sm:w-[8.1rem]"
         />
         <Image
           src="/line 1.svg"
           width={3}
           height={3}
-          className=" sm:w-[0.1rem]"
+          className=" xs:hidden sm:block sm:w-[0.1rem]"
         />
 
         <Image
           src="/logo 3.svg"
           width={105.5}
           height={23.7}
-          className=" xl:block sm:w-[8rem] "
+          className=" xs:hidden sm:block xl:block sm:w-[8rem] "
         />
         <Image
           src="/logo 4.svg"
           width={105.5}
           height={47.49}
-          className="  xl:block sm:w-[7rem]"
+          className=" xs:hidden sm:block  sm:w-[7rem]"
         />
       </div>
-      <div>
+      <div className="flex">
         <Image
           onClick={() => setIsBurger(!IsBurger)}
           src={IsBurger ? "/burger-menu.svg" : "/close-del.svg"}
           width={20}
           height={20}
-          // className="xl:hidden lg:w-[3rem] lg:h-[3rem]"
           className={`xl:hidden lg:w-[3rem] lg:h-[3rem] transition-transform duration-300 ease-in-out ${IsBurger ? "transform-gpu hover:scale-110" : ""}`}
         />
-        {!IsBurger && <MobileNavigation name="hammad" />}
+        {/* {!IsBurger && <MobileNavigation />} */}
       </div>
       <div className=" max-w-[480px]  xs:hidden  xl:block flex-grow">
         <ul className="flex m-0  items-center justify-between text-darkBlue  ">
